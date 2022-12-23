@@ -1,8 +1,10 @@
-version: 0.0
+version: 1.0
 os: linux
 files:
-  - source: /
-    destination: /home/ubuntu/nodejs
+  - source: app
+    destination: /opt/app
+  - source: nginx
+    destination: /home/ubuntu/nginx
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
